@@ -61,7 +61,7 @@ const onSubmit = async (): Promise<void> => {
 			body: raw,
 		};
 
-		const response = await fetch('https://83.229.35.242:4000/users', requestOptions);
+		const response = await fetch('https://kiferlabs.store:2083/users', requestOptions);
 		const data = await response.json();
 
 		if (response.status !== 201) throw new Error(data.message);
